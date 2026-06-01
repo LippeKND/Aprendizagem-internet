@@ -1,35 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Inclusão Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão Digital e Segurança Online</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
     <header>
-        <h1>Inclusão Digital para Iniciantes</h1>
+        <nav>
+            <h2>Inclusão Digital</h2>
+
+            <ul>
+                <li><a href="#golpes">Golpes</a></li>
+                <li><a href="#senhas">Senhas</a></li>
+                <li><a href="#idosos">Idosos</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Bem-vindo!</h2>
-            <p>Este site foi criado para ajudar iniciantes a aprender conceitos básicos de tecnologia.</p>
-        </section>
+    <section class="hero">
 
-        <section>
-            <h2>Dicas de Navegação</h2>
-            <ul>
-                <li>Utilize senhas seguras.</li>
-                <li>Não clique em links suspeitos.</li>
-                <li>Mantenha seus aplicativos atualizados.</li>
-            </ul>
-        </section>
+        <div class="hero-content">
 
-        <button onclick="mostrarMensagem()">Clique aqui</button>
-        <p id="mensagem"></p>
-    </main>
+            <h1>Inclusão Digital e Segurança Online</h1>
+
+            <p>
+                Aprenda a navegar na internet de forma segura,
+                identificar golpes digitais e proteger seus dados.
+            </p>
+
+            <a href="#golpes" class="btn">
+                Começar Agora
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="golpes">
+
+        <h2>Principais Golpes na Internet</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Phishing</h3>
+                <p>E-mails falsos que tentam roubar informações pessoais.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h3>Golpes no WhatsApp</h3>
+                <p>Mensagens falsas solicitando dinheiro ou códigos.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-money-bill"></i>
+                <h3>Pix Falso</h3>
+                <p>Comprovantes adulterados e transferências inexistentes.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user-secret"></i>
+                <h3>Perfis Clonados</h3>
+                <p>Criminosos utilizam fotos e dados para aplicar golpes.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="senhas" class="dark">
+
+        <h2>Como Criar Senhas Seguras</h2>
+
+        <div class="senha-box">
+
+            <div class="errado">
+                <h3>❌ Evite</h3>
+                <p>123456</p>
+                <p>senha123</p>
+                <p>abcdef</p>
+            </div>
+
+            <div class="certo">
+                <h3>✅ Recomendado</h3>
+                <p>M@ria2026#</p>
+                <p>C@saSegura88</p>
+                <p>Br@sil#Tech99</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Compras Online Seguras</h2>
+
+        <div class="checklist">
+
+            <p>✔ Verifique se o site possui HTTPS</p>
+            <p>✔ Leia avaliações de outros usuários</p>
+            <p>✔ Não compartilhe códigos recebidos</p>
+            <p>✔ Desconfie de promoções exageradas</p>
+            <p>✔ Confira o endereço do site</p>
+
+        </div>
+
+    </section>
+
+    <section id="idosos">
+
+        <h2>Dicas para Idosos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📱 Aumentar Letras</h3>
+                <p>Facilita a leitura no celular.</p>
+            </div>
+
+            <div class="card">
+                <h3>📞 Chamadas de Vídeo</h3>
+                <p>Mantenha contato com familiares.</p>
+            </div>
+
+            <div class="card">
+                <h3>💬 WhatsApp</h3>
+                <p>Aprenda a enviar mensagens e fotos.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏦 Aplicativos Bancários</h3>
+                <p>Use com segurança e atenção.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="quiz" class="quiz">
+
+        <h2>Quiz de Segurança</h2>
+
+        <p>
+            Você recebeu uma mensagem dizendo que ganhou um prêmio
+            e precisa clicar em um link.
+        </p>
+
+        <button onclick="respostaErrada()">
+            A) Clicar no Link
+        </button>
+
+        <button onclick="respostaCerta()">
+            B) Verificar a Origem da Mensagem
+        </button>
+
+        <div id="resultado"></div>
+
+    </section>
+
+    <footer>
+
+        <h3>Projeto Extensionista UNINTER</h3>
+
+        <p>
+            Desenvolvido por Felippe da Rocha Tenorio
+        </p>
+
+        <p>
+            Objetivo: Promover inclusão digital e segurança online.
+        </p>
+
+    </footer>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>

@@ -1,21 +1,189 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f4f4;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
 }
 
-header {
-    background: #0066cc;
-    color: white;
-    padding: 20px;
-    text-align: center;
+html{
+scroll-behavior:smooth;
 }
 
-main {
-    padding: 20px;
+body{
+background:#f5f7fa;
+color:#333;
 }
 
-button {
-    padding: 10px 20px;
-    cursor: pointer;
+header{
+background:#0f172a;
+padding:20px 10%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav h2{
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.6),
+rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#2563eb;
+padding:15px 30px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+section{
+padding:80px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:36px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card i{
+font-size:40px;
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.dark{
+background:#0f172a;
+color:white;
+}
+
+.senha-box{
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.errado,.certo{
+background:white;
+color:black;
+padding:30px;
+border-radius:10px;
+min-width:250px;
+}
+
+.checklist{
+max-width:700px;
+margin:auto;
+font-size:20px;
+line-height:2;
+}
+
+.quiz{
+text-align:center;
+background:#eef2ff;
+}
+
+.quiz button{
+padding:15px;
+margin:10px;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+#resultado{
+margin-top:20px;
+font-size:22px;
+font-weight:bold;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
 }
