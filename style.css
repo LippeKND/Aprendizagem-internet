@@ -2,7 +2,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
+font-family:'Segoe UI',sans-serif;
 }
 
 html{
@@ -16,26 +16,31 @@ color:#333;
 
 header{
 background:#0f172a;
-padding:20px 10%;
-position:sticky;
+position:fixed;
+width:100%;
 top:0;
 z-index:1000;
 }
 
 nav{
+max-width:1200px;
+margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:20px;
 }
 
-nav h2{
+.logo{
 color:white;
+font-size:24px;
+font-weight:bold;
 }
 
 nav ul{
 display:flex;
 list-style:none;
-gap:25px;
+gap:20px;
 }
 
 nav a{
@@ -44,22 +49,18 @@ text-decoration:none;
 }
 
 .hero{
-height:90vh;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 background:
-linear-gradient(rgba(0,0,0,.6),
-rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
 color:white;
-}
-
-.hero-content{
-max-width:800px;
 }
 
 .hero h1{
@@ -74,39 +75,35 @@ margin-bottom:30px;
 
 .btn{
 background:#2563eb;
-padding:15px 30px;
+padding:15px 35px;
+border-radius:8px;
 color:white;
 text-decoration:none;
-border-radius:8px;
 }
 
 section{
-padding:80px 10%;
+padding:90px 10%;
 }
 
 section h2{
 text-align:center;
 margin-bottom:40px;
-font-size:36px;
 }
 
+.stats,
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:20px;
 }
 
+.stat-card,
 .card{
 background:white;
 padding:30px;
 border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-transition:.3s;
 text-align:center;
-}
-
-.card:hover{
-transform:translateY(-8px);
+box-shadow:0 5px 20px rgba(0,0,0,.1);
 }
 
 .card i{
@@ -120,31 +117,30 @@ background:#0f172a;
 color:white;
 }
 
-.senha-box{
+.senhas{
 display:flex;
 justify-content:center;
-gap:50px;
+gap:30px;
 flex-wrap:wrap;
 }
 
-.errado,.certo{
+.box{
 background:white;
 color:black;
 padding:30px;
 border-radius:10px;
-min-width:250px;
 }
 
 .checklist{
 max-width:700px;
 margin:auto;
-font-size:20px;
 line-height:2;
+font-size:20px;
 }
 
 .quiz{
-text-align:center;
 background:#eef2ff;
+text-align:center;
 }
 
 .quiz button{
@@ -159,8 +155,8 @@ cursor:pointer;
 
 #resultado{
 margin-top:20px;
-font-size:22px;
 font-weight:bold;
+font-size:22px;
 }
 
 footer{
@@ -178,12 +174,6 @@ font-size:36px;
 
 nav{
 flex-direction:column;
-gap:10px;
-}
-
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
 }
 
 }
